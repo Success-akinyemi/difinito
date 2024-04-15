@@ -1,0 +1,185 @@
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.5 ));
+    position: relative;
+    flex-direction: column;
+}
+
+.hero .backVideo{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero .content{
+    position: relative;
+    z-index: 10;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 30vh;
+    margin-bottom: auto;
+}
+
+.hero .content h5{
+    font-size: 19px;
+}
+
+.hero .content h1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 60px;
+}
+
+.hero .content h1 .bold{
+    font-weight: 700;
+    background: linear-gradient(to right, rgb(237, 28, 36), rgb(255, 77, 85)) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero .content .heroText{
+    width: 50%;
+}
+
+.hero .content .actions{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero .content .actions .btn{
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+    transition: all 500ms ease-in;
+}
+
+.hero .content .actions .btn:hover{
+    background: var(--primary-color);
+}
+
+.hero .content .actions .play{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 400;
+}
+
+.hero .actions .play .playCard{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    background: var(--primary-color);
+    font-size: 30px;
+    position: relative;
+    line-height: 100px;
+    margin-right: 10px;
+}
+
+.hero .actions .play .playCard::before,
+.hero .actions .play .playCard::after{
+    content: '';
+    position: absolute;
+    border: 2px solid var(--primary-color);
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+    animation: animate 1.5s linear infinite;
+    opacity: 0;
+}
+.hero .actions .play .playCard::after{animation-delay: 0.5s;}
+@keyframes animate {
+    0%{
+        transform: scale(.5);
+    } 50% {
+        opacity: 1;
+    } 100% {
+        transform: scale(1.2);
+    }
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .hero .backVideo{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .hero .backVideo{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.hero .foot{
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.hero .foot .left{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-white);
+}
+
+.hero .foot .right{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hero .foot .right .icon{
+    border: 2px solid var(--primary-color);
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms ease-in;
+    cursor: pointer;
+}
+
+.hero .foot .right .icon:hover{
+    background: var(--primary-color);
+}
+
+@media screen and (max-width: 768px) {
+    .hero .content{
+        margin-top: 20vh;
+    }
+
+    .hero .content h1{
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .hero .content .heroText{
+        width: 80%;
+    }
+}

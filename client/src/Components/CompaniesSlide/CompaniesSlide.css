@@ -1,0 +1,10 @@
+.companiesSlide{
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.slick-slide > div{
+    width: 90px;
+    align-items: center;
+}
