@@ -139,8 +139,8 @@
     }
   }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
     .services{
-        margin-bottom: 4rem;
+        margin-bottom: 17rem;
     }    
 }
