@@ -136,4 +136,14 @@
     .footer .top{
         flex-direction: column;
     }
+
+    .footer .one img{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer .one img{
+        width: 35%;
+    }
 }

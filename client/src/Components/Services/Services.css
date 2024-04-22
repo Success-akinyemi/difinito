@@ -127,4 +127,14 @@
     .services{
         height: 110vh;
     }
+
+    .services .content .left .btn .btnCard{
+        width: 40%;
+    }
+
+    .services .content .right .up,
+    .services .content .right .down{
+        flex-direction: column;
+        width: 90vw;
+    }
   }

@@ -183,3 +183,13 @@
         width: 80%;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .hero .content h1{
+        font-size: 40px;
+    }
+
+    .hero .foot{
+        margin-bottom: 2rem;
+    }
+}

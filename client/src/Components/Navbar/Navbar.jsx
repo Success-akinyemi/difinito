@@ -3,9 +3,11 @@ import LogoImg from '../../assets/Asset 2@3x.png'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { IoMenu } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
+
 
 function Navbar({enableScrollEffect}) {
-    const [ active, setActive ] = useState(false)
+    const [ open, setOpen ] = useState(false)
     const [isScroll, setIsScroll] = useState(false)
 
         useEffect(() => {
@@ -16,8 +18,11 @@ function Navbar({enableScrollEffect}) {
             }
         }, [])
 
+        const toggle = () => {
+            setOpen((prev) => !prev)
+        }
+
   return (
-    <>
         <div className={`sidePadding navbar ${isScroll ? 'scroll' : 'none'} ${!enableScrollEffect ? 'show' : ''}`} >
             <div className="left">
                 <Link to='/'>
@@ -25,8 +30,27 @@ function Navbar({enableScrollEffect}) {
                 </Link>
             </div>
 
+            <div onClick={toggle} className="menuIconCard">
+                {
+                    open === false ? (
+                        <IoMenu className='menuIcon' />
+                    ) : (
+                        <IoClose className='menuIcon' />
+                    )
+                }
+                
+            </div>
+
             <div className="right">
-                <div className="menu">
+                <div className={`menu ${open ? 'show' : ''}`}>
+                    {
+                        /**
+                         <div onClick={toggle} className="closeIconCard">
+                             <IoClose className='closeIcon' />
+                         </div>
+                         * 
+                         */
+                    }
                     <Link className={`link ${isScroll ? 'dark' : 'white'}`} to='' >Home</Link>
                     <Link className={`link ${isScroll ? 'dark' : 'white'}`} to='' >About</Link>
                     <Link className={`link ${isScroll ? 'dark' : 'white'}`} to='' >Team</Link>
@@ -38,32 +62,6 @@ function Navbar({enableScrollEffect}) {
                 </div>
             </div>
         </div>
-
-        <div className="sidePadding moblieNav">
-            <div className="left">
-                <Link to='/'>
-                    <img src={LogoImg} alt='Difinito logo' />
-                </Link>
-            </div>
-
-            <div className="menuIconCard">
-                <IoMenu />
-            </div>
-
-            <div className={`right ${active ? 'show' : 'hide'}`}>
-                <div className="menu">
-                    <Link className={`link ${isScroll ? 'dark' : 'white'}`} to='' >Home</Link>
-                    <Link className={`link ${isScroll ? 'dark' : 'white'}`} to='' >About</Link>
-                    <Link className={`link ${isScroll ? 'dark' : 'white'}`} to='' >Team</Link>
-                    <Link className={`link ${isScroll ? 'dark' : 'white'}`} to='' >Services</Link>
-                    <Link className={`link ${isScroll ? 'dark' : 'white'}`} to='' >Projects</Link>
-                    <Link className={`link ${isScroll ? 'dark' : 'white'}`} to='' >Pricing</Link>
-                    <Link className={`link ${isScroll ? 'dark' : 'white'}`} to='' >News</Link>
-                    <Link className={`link ${isScroll ? 'dark' : 'white'}`} to='' >Contact Us</Link>
-                </div>
-            </div>
-        </div>
-    </>
   )
 }
 
