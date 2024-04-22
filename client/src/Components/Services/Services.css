@@ -138,3 +138,9 @@
         width: 90vw;
     }
   }
+
+@media screen and (max-width: 350px) {
+    .services{
+        margin-bottom: 4rem;
+    }    
+}

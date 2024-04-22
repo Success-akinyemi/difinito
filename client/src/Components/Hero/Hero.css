@@ -193,3 +193,30 @@
         margin-bottom: 2rem;
     }
 }
+
+
+@media screen and (max-width: 350px) {
+    .hero .content{
+        margin-top: 10vh;
+    }
+    
+    .hero .content .heroText{
+        width: 100%;
+    }
+
+    .hero .content .actions .btn{ 
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .hero .actions .play .playCard{
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .hero .foot .right .icon{
+        font-size: 10px;
+        padding: 5px;
+    }
+}
