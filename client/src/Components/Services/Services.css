@@ -5,6 +5,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 14rem;
+    margin-top: 10rem;
 }
 
 .services img{
@@ -108,34 +110,185 @@
 .services .content .right .card{
     flex: 1;
     width: 100%;
-    border: 1px solid var(--color-dark);
-    border-radius: 5px;
+    height: 20rem;
+    perspective: 1000px;
+}
+
+.services .content .right .card .cardInner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.services .content .right .card .front,
+.services .content .right .card .back{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.services .content .right .card .front{
+    background: url('../../assets/card/ui.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: var(--color-white);
+}
+
+.services .content .right .up .card:first-child .front{
+    background: url('../../assets/card/web.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.services .content .right .down .card:last-child .front{
+    background: url('../../assets/card/market.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.services .content .right .card .front h2{
+    font-weight: 500;
+}
+
+.services .content .right .card .front p{
+    color: #ccc;
+    font-size: 13px;
+}
+
+.services .content .right .card .front button{
+    width: 120px;
+    border: 1px solid var(--color-white);
+    background: transparent;
+    border-radius: 50px;
+    padding: 8px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: var(--color-white);
+}
+
+.services .content .right .card .back{
+    background: var(--color-dark);
+    color: var(--primary-color);
+    padding: 20px 40px;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+}
+
+.services .content .right .card .back h1{
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.services .content .right .card .back h1 span{
+    font-weight: 400;
+}
+
+.services .content .right .card .back p{
+    font-size: 14px;
+}
+
+.services .content .right .card .back img{
+    width: 70px;
+    height: 60px;
+}
+
+.services .content .right .card .back .row{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.services .content .right .card .back .row .col{
+    flex: 1;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    position: relative;
+}
+
+.services .content .right .card .back .col h2{
+    font-size: 20px;
+}
+
+.services .content .right .card .back .col p{
+    margin-top: 5px;
+}
+
+.services .content .right .card .back button{
+    background: var(--color-white);
+    color: var(--color-dark);
+    border: 0;
+    outline: 0;
+    padding: 8px 25px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.services .content .right .card:hover .cardInner{
+    transform: rotateY(180deg);
 }
 
 @media screen and (max-width: 768px) {
     .services{
         margin-top: 7rem;
         height: 90vh;
+        margin-bottom: 30rem;
     }
 
     .services .content{
         flex-direction: column;
     }
+
+    .services .content .right .up,
+    .services .content .right .down{
+        width: 94vw;
+        margin-right: 1rem;
+    }
+
+    .services .content .right .up .card{
+        height: 22rem;
+    }
+
   }
 
   @media screen and (max-width: 450px) {
     .services{
-        height: 110vh;
+        margin-bottom: 94rem;
     }
 
     .services .content .left .btn .btnCard{
-        width: 40%;
+        width: 60%;
+    }
+
+    .services .content .right{
+        height: 50rem;
+        margin-top: 24rem;
     }
 
     .services .content .right .up,
     .services .content .right .down{
         flex-direction: column;
         width: 90vw;
+        height: 125rem;
+    }
+
+    .services .content .right .up .card,
+    .services .content .right .down .card{
+        width: 100%;
+        min-height: 22rem;
     }
   }
 
@@ -143,4 +296,9 @@
     .services{
         margin-bottom: 17rem;
     }    
+
+    .services .content .right .card{
+        width: 100%;
+        height: 20rem;
+    }
 }

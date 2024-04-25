@@ -2,9 +2,11 @@
 
 :root{
   --color-white: #fff;
+  --color-bg: #ffffff8c;
   --color-dark: #000;
   --primary-color: rgb(237, 28, 36);
   --primary-border: rgba(248, 15, 23, 0.959);
+  --primary-bg: rgba(248, 15, 23, 0.712);
   --primary-opa: rgba(237, 28, 35, 0.082);
 
   --transition: all 300ms ease;
