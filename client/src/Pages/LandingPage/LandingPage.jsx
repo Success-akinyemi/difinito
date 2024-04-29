@@ -1,3 +1,4 @@
+import CTA from '../../Components/CTA/CTA'
 import CompaniesSlide from '../../Components/CompaniesSlide/CompaniesSlide'
 import FAQ from '../../Components/FAQ/FAQ'
 import Footer from '../../Components/Footer/Footer'
@@ -18,6 +19,7 @@ function LandingPage() {
         <Stats />
         <Services />
         <FAQ />
+        <CTA />
         <Footer />
     </div>
   )

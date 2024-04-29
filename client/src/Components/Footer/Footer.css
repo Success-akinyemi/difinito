@@ -15,11 +15,11 @@
 .footer .top{
     display: flex;
     width: 100%;
-    gap: 3rem;
+    justify-content: space-between;
 }
 
 .footer .top > div{
-    flex: 1;
+    width: 40%;
 }
 
 .footer .one{
@@ -29,7 +29,7 @@
 }
 
 .footer .one img{
-    width: 70%;
+    width: 40%;
 }
 
 .footer .one p{
@@ -60,37 +60,37 @@
     color: var(--color-white);
 }
 
-.footer .two{
+.footer .three .left{
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.footer .two h2{
+.footer .three .left h2{
     font-weight: 600;
     color: var(--primary-color);
 }
 
-.footer .two .menu{
+.footer .three .left .menu{
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
 }
 
-.footer .two .menu .link{
+.footer .three .left .menu .link{
     transition: all 300ms ease;
     font-weight: 500;
     font-size: 17px;
 }
 
-.footer .two .menu .link:hover{
+.footer .three .left .menu .link:hover{
     color: var(--primary-border);
 }
 
 .footer .three{
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    gap: 4rem;
+    justify-content: flex-end;
 }
 
 .footer .three h2{
@@ -139,6 +139,11 @@
 
     .footer .one img{
         width: 50%;
+    }
+
+    .footer .three{
+        flex-direction: column;
+        margin-top: 3rem;
     }
 }
 

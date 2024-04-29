@@ -36,29 +36,32 @@ function Footer() {
                 </div>
             </div>
 
-            <div className='two'>
-                <h2>Quick Links</h2>
-
-                <div className="menu">
-                    <Link className={`link`} to='' >Home</Link>
-                    <Link className={`link`} to='' >About</Link>
-                    <Link className={`link`} to='' >Team</Link>
-                    <Link className={`link`} to='' >Services</Link>
-                    <Link className={`link`} to='' >Projects</Link>
-                    <Link className={`link`} to='' >Pricing</Link>
-                    <Link className={`link`} to='' >News</Link>
-                    <Link className={`link`} to='' >Contact Us</Link>
-                </div>
-            </div>
 
             <div className='three'>
-                <h2>Contact Us</h2>
+                <div className='left'>
+                    <h2>Quick Links</h2>
+
+                    <div className="menu">
+                        <Link className={`link`} to='' >Home</Link>
+                        <Link className={`link`} to='' >About</Link>
+                        <Link className={`link`} to='' >Team</Link>
+                        <Link className={`link`} to='' >Services</Link>
+                        <Link className={`link`} to='' >Projects</Link>
+                        <Link className={`link`} to='' >Pricing</Link>
+                        <Link className={`link`} to='' >News</Link>
+                        <Link className={`link`} to='' >Contact Us</Link>
+                    </div>
+                </div>
+                
+                <div className='right'>
+                    <h2>Contact Us</h2>
 
 
-                <div className="menu">
-                    <div className="info"><FaPhone className='icon' /> 090 000 000 00</div>
-                    <div className="info"><MdOutlineMail className='icon' /> user@gmail.com</div>
-                    <div className="info"><MdLocationOn className='icon' /> 91 Road AAA Abuja</div>
+                    <div className="menu">
+                        <div className="info"><FaPhone className='icon' /> 090 000 000 00</div>
+                        <div className="info"><MdOutlineMail className='icon' /> user@gmail.com</div>
+                        <div className="info"><MdLocationOn className='icon' /> 91 Road AAA Abuja</div>
+                    </div>
                 </div>
             </div>
 
