@@ -51,8 +51,8 @@ function Navbar({enableScrollEffect}) {
                          * 
                          */
                     }
-                    <Link className={`link ${isScroll ? 'dark' : 'white'}`} to='' >Home</Link>
-                    <Link className={`link ${isScroll ? 'dark' : 'white'}`} to='' >About</Link>
+                    <Link className={`link ${isScroll ? 'dark' : 'white'}`} to='/' >Home</Link>
+                    <Link className={`link ${isScroll ? 'dark' : 'white'}`} to='/about' >About</Link>
                     <Link className={`link ${isScroll ? 'dark' : 'white'}`} to='' >Team</Link>
                     <Link className={`link ${isScroll ? 'dark' : 'white'}`} to='' >Services</Link>
                     <Link className={`link ${isScroll ? 'dark' : 'white'}`} to='' >Projects</Link>

@@ -57,3 +57,19 @@
         width: 90%;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .cta .card{
+        width: 90%;
+        padding: 20px;
+        gap: 0.6rem;
+    }
+
+    .cta  .card h1{
+        font-size: 30px;
+    }
+
+    .cta .card .btn{
+        margin-top: 1rem;
+    }
+}
