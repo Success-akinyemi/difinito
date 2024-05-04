@@ -31,7 +31,7 @@ function About() {
 
           <div className="card">
             <div className="title">
-              Who are we <span></span>
+             From the Mangement <span></span>
             </div>
             <div className="cardInfo">
               <img />
