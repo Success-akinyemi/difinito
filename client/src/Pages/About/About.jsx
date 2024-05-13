@@ -2,6 +2,8 @@ import Navbar from '../../Components/Navbar/Navbar'
 import './About.css'
 import ImgBg from '../../assets/statsbg.jpg'
 import Footer from '../../Components/Footer/Footer'
+import ImgOne from '../../assets/card/two.jpg'
+import ImgTwo from '../../assets/card/three.jpg'
 
 
 function About() {
@@ -25,7 +27,9 @@ function About() {
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero mollitia repellendus tenetur repudiandae, consectetur nam vitae voluptatem suscipit culpa, iusto odio. Provident est ab commodi, deleniti reiciendis dicta corrupti, incidunt pariatur atque tempora maxime adipisci, nobis enim dolores distinctio? Ex.
               </p>
-              <img />
+              <div className="imgCard">
+                <img src={ImgOne} />
+              </div>
             </div>
           </div>
 
@@ -33,13 +37,19 @@ function About() {
             <div className="title">
              From the Mangement <span></span>
             </div>
-            <div className="cardInfo">
-              <img />
+            <div className="cardInfo two">
+              <div className='imgCard'>
+                <img src={ImgTwo} />
+              </div>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita doloribus, ratione, ex blanditiis eaque nostrum quasi architecto dolores excepturi at nam necessitatibus qui, consectetur quibusdam veritatis quaerat. Modi illum dolores sit impedit! Inventore, explicabo dolorem tenetur sed voluptatibus quos molestiae amet vero perferendis nemo quasi atque alias placeat tempora minima eligendi earum excepturi maxime quod deserunt nisi laborum. Quaerat, vel veritatis? Dicta voluptatum rem officia voluptatibus? Hic necessitatibus cumque deleniti.
               </p>
             </div>
           </div>
+        </div>
+
+        <div className="team">
+          
         </div>
 
         <Footer />

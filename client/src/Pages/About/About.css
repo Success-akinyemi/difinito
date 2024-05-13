@@ -69,13 +69,42 @@
 .about .body .cardInfo{
     display: flex;
     gap: 2rem;
+    align-items: center;
 }
 
 .about .cardInfo p{
     flex: 1.5;
+    font-size: 20px;
 }
 
-.about .cardInfo img{
+.about .cardInfo .imgCard{
     flex: 1;
     background: red;
+}
+
+.about .cardInfo .imgCard img{
+    width: 40%;
+
+}
+
+.about .cardInfo .imgCard:last-child img{
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+    .about .cardInfo{
+        flex-direction: column;
+    }
+
+    .about .cardInfo.two{
+        flex-direction: column-reverse;
+    }
+
+    .about .body .card .title{
+        width: 100%;
+    }
+
+    .about .cardInfo .imgCard img{
+        width: 100%;
+    }
 }

@@ -30,7 +30,11 @@ function Services() {
                             <div className="front">
                                 <h2>Web Development</h2>
                                 <p>Web design and devlopment</p>
-                                <button>hover me</button>
+                                <button>
+                                    <div className="btn">
+                                        Learn More
+                                    </div>
+                                </button>
                             </div>
                             <div className="back">
                                 <img src={WavihandImg} alt='hand' />
@@ -53,7 +57,11 @@ function Services() {
                             <div className="front">
                                 <h2>User Interface Design</h2>
                                 <p>Web design and devlopment</p>
-                                <button>hover me</button>
+                                <button>
+                                    <div className="btn">
+                                        Learn More
+                                    </div>
+                                </button>
                             </div>
                             <div className="back">
                                 <img src={WavihandImg} alt='hand' />
@@ -78,7 +86,11 @@ function Services() {
                             <div className="front">
                                 <h2>Web Development</h2>
                                 <p>Web design and devlopment</p>
-                                <button>hover me</button>
+                                <button>
+                                    <div className="btn">
+                                        Learn More
+                                    </div>
+                                </button>
                             </div>
                             <div className="back">
                                 <img src={WavihandImg} alt='hand' />
@@ -101,7 +113,11 @@ function Services() {
                             <div className="front">
                                 <h2>Digital Marketing</h2>
                                 <p>Web design and devlopment</p>
-                                <button>hover me</button>
+                                <button>
+                                    <div className="btn">
+                                        Learn More
+                                    </div>
+                                </button>
                             </div>
                             <div className="back">
                                 <img src={WavihandImg} alt='hand' />

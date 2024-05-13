@@ -22,9 +22,9 @@ function Hero() {
         </video>
 
         <div className="content">
-            <h5>Hello,</h5>
+            {/**<h5>Hello,</h5> */}
 
-            <h1>We are 
+            <h1>We are <br />
                 <span className="bold">
                     <>{text}</>
                     <Cursor cursorStyle='/' />
@@ -35,7 +35,7 @@ function Hero() {
 
             <div className="actions">
                 <div className="btn">
-                    Get Started &gt;
+                    Get Started /&gt;
                 </div>
                 <div className="play">
                     <div className="playCard">
