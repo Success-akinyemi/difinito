@@ -215,3 +215,9 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .faq{
+        margin-top: 80rem;
+    }
+}
