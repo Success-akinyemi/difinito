@@ -210,7 +210,11 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-    }    
+    }   
+    
+    .hero .content .heroText{
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -230,7 +234,7 @@
     }
 
     .hero .foot{
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
 }
 
