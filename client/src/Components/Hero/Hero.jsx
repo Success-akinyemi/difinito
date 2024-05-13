@@ -31,7 +31,7 @@ function Hero() {
                 </span>
             </h1>
 
-            <p className='heroText'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem blanditiis, rem ab dolores nostrum nobis dolore eaque sed. Nulla aliquam quasi aut reiciendis in, iure nisi. Laborum nulla veritatis tempore odio distinctio blanditiis nostrum minima doloremque, earum, architecto sapiente corrupti?</p>
+            <p className='heroText'>TIRED OF UNRELIABLE DIGITAL SERVICES? UNLEASH DIFINITOS ABILITY TO REVITALISE YOUR DIGITAL EXPERIENCE WITH OUR INNOVATIVE SOLUTIONS AND EXPERT PROBLEM _ SOLVING</p>
 
             <div className="actions">
                 <div className="btn">

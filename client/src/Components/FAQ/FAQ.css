@@ -177,6 +177,11 @@
     transition: all 0.3s ease;
 }
 
+.faq small b{
+    font-weight: 600;
+    font-size: 14px;
+}
+
 .faq .down .right {
     width: 40%;
     min-height: 65vh;

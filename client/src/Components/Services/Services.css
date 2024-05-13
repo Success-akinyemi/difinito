@@ -135,11 +135,12 @@
     background: rgb(199, 2, 2);
     background-size: cover;
     background-position: center;
-    padding: 60px 40px;
+    padding: 15px 15px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     color: var(--color-white);
+    align-items: center;
 }
 
 .services .content .right .up .card:first-child .front{

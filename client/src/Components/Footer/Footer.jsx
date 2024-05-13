@@ -17,7 +17,7 @@ function Footer() {
                 <img src={LogoImg} alt='difinito logo' />
 
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro fugiat, voluptatibus cupiditate fuga rerum est ab modi? Dolore, ut iste.
+                HAVE YOU BEEN  DISAPPOINTED BY DIGITAL SERVICES OR AGENCIES  IN THE PAST ?  LOOK NO FURTHER 
                 </p>
 
                 <div className="menus">

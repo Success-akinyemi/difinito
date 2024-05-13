@@ -44,7 +44,7 @@ function FAQ() {
                             <p className="head">We combine strategy with marketing, design & technology to ensure customer prefer you</p>
 
                             <p className="body">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, nulla dolores. Magnam, eaque adipisci assumenda voluptate itaque reiciendis fugiat animi inventore maxime consectetur amet esse?
+                            Discover the exceptional benefits of Difinito. Our unique tools and approach set us apart, allowing us to serve you better than ever before. By combining strategy with marketing, design, and technology, we ensure that your customers not only choose you but prefer you over the competition. At Difinito, our primary aim is your satisfaction and success. We put your brand in the spotlight, offering carefully crafted services that are delivered efficiently and effectively, without wasting your time. With Difinito, you can expect premium satisfaction and results that will leave you delighted that you chose us to serve you. Let us help you shine in the market and elevate your brand to new heights.
                             </p>
                         </>
                     ) : (
@@ -52,7 +52,7 @@ function FAQ() {
                             <p className="head">We combine strategy with research, design & technology to ensure enjoy your platform</p>
 
                             <p className="body">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum nemo ex debitis voluptates ipsam mollitia similique laudantium aliquid quo hic recusandae ratione unde, repudiandae vero adipisci magni voluptatum odio. Enim.
+                            Discover the exceptional benefits of Difinito. Our unique tools and approach set us apart, allowing us to serve you better than ever before. By combining strategy with marketing, design, and technology, we ensure that your customers not only choose you but prefer you over the competition. At Difinito, our primary aim is your satisfaction and success. We put your brand in the spotlight, offering carefully crafted services that are delivered efficiently and effectively, without wasting your time. With Difinito, you can expect premium satisfaction and results that will leave you delighted that you chose us to serve you. Let us help you shine in the market and elevate your brand to new heights.
                             </p>
                         </>
                     )
@@ -93,6 +93,11 @@ function FAQ() {
                             </div>
                         ))
                     }
+                    <small>
+                        <b>
+                            *Feel free to ask more questions or seek further clarification on any topic related to digital marketing and services. I'm here to help!
+                        </b>
+                    </small>
                 </div> 
             </div>
 

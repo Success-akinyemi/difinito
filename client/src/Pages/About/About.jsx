@@ -1,6 +1,6 @@
 import Navbar from '../../Components/Navbar/Navbar'
 import './About.css'
-import ImgBg from '../../assets/statsbg.jpg'
+import ImgBg from '../../assets/aidi.png'
 import Footer from '../../Components/Footer/Footer'
 import ImgOne from '../../assets/card/two.jpg'
 import ImgTwo from '../../assets/card/three.jpg'
@@ -27,8 +27,8 @@ function About() {
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero mollitia repellendus tenetur repudiandae, consectetur nam vitae voluptatem suscipit culpa, iusto odio. Provident est ab commodi, deleniti reiciendis dicta corrupti, incidunt pariatur atque tempora maxime adipisci, nobis enim dolores distinctio? Ex.
               </p>
-              <div className="imgCard">
-                <img src={ImgOne} />
+              <div className="imgCard one">
+                <img src={ImgBg} />
               </div>
             </div>
           </div>

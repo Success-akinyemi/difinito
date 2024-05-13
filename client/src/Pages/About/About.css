@@ -79,7 +79,11 @@
 
 .about .cardInfo .imgCard{
     flex: 1;
-    background: red;
+}
+
+.about .cardInfo .imgCard.one{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .about .cardInfo .imgCard img{
