@@ -79,6 +79,7 @@
 
 .about .cardInfo .imgCard{
     flex: 1;
+    background: red;
 }
 
 .about .cardInfo .imgCard.one{
@@ -95,6 +96,79 @@
     justify-content: flex-end;
 }
 
+.about .team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.about .team .top{
+    background: red;
+    padding: 10px 40px;
+    border-radius: 20px;
+    color: var(--color-white);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.about .team .teamMembers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.about .team .teamMembers .teamCard{
+    width: 350px;
+    height: 500px;
+    border-radius: 30px 0px 30px 0px;
+    overflow: hidden;
+    position: relative;
+}
+
+.about .teamMembers .teamCard img{
+    width: 100%;
+}
+
+
+.about .teamMembers .teamCard .info{
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    background: red;
+    width: 100%;
+}
+
+.about .teamCard .info .name,
+.about .teamCard .info .role{
+    background: var(--color-white);
+    color: var(--color-dark);
+    font-weight: 500;
+    padding: 10px;
+    font-size: 17px;
+    display: flex;
+}
+
+.about .teamCard .info .role{
+    background: var(--primary-bg);
+    justify-content: flex-end;
+    color: var(--color-white);
+}
+
+@media screen and (max-width: 1400px) {
+    .about .team .teamMembers{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .about .team .teamMembers{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 @media screen and (max-width: 768px) {
     .about .cardInfo{
         flex-direction: column;
@@ -104,8 +178,23 @@
         flex-direction: column-reverse;
     }
 
+    .about .cardInfo p{
+        width: 100%;
+    }
+
     .about .body .card .title{
         width: 100%;
+    }
+
+    .about .cardInfo .imgCard img{
+        width: 100%;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .about .team .teamMembers .teamCard{
+        width: 96%;
     }
 
     .about .cardInfo .imgCard img{

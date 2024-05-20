@@ -157,11 +157,13 @@
 
 .services .content .right .card .front h2{
     font-weight: 500;
+    margin-bottom: 6px;
 }
 
 .services .content .right .card .front p{
     color: #ccc;
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .services .content .right .card .front button{

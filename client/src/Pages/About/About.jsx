@@ -4,6 +4,7 @@ import ImgBg from '../../assets/aidi.png'
 import Footer from '../../Components/Footer/Footer'
 import ImgOne from '../../assets/card/two.jpg'
 import ImgTwo from '../../assets/card/three.jpg'
+import { teamMembers } from '../../data/teamMembers'
 
 
 function About() {
@@ -49,7 +50,23 @@ function About() {
         </div>
 
         <div className="team">
-          
+          <div className="top">
+            Our Team Members
+          </div>
+
+          <div className='teamMembers'>
+            {
+              teamMembers.map((item, idx) => (
+                <div key={idx} className="teamCard">
+                  <img src={item?.img} alt={item?.name} />
+                  <div className="info">
+                    <div className="name">{item?.name}</div>
+                    <div className="role">{item?.role}</div>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
         </div>
 
         <Footer />

@@ -99,7 +99,7 @@ function Services() {
                         <div className="cardInner">
                             <div className="front">
                                 <h2>Motion Graphics</h2>
-                                <p>At Difinito, we seamlessly blend our exceptional graphic design and animation skills to bring static elements to life through captivating motion graphics. Our motion graphics serve as a powerful tool to convey information, tell compelling stories, and engage and captivate your audience. Let us help you elevate your brand's visual storytelling with our dynamic and innovative motion graphics solutions.</p>
+                                <p>At Difinito, we seamlessly blend our exceptional graphic design and animation skills to bring static elements to life through captivating motion graphics. Our motion graphics serve as a powerful tool to convey information, tell compelling stories, and engage and captivate your audience.</p>
                                 <button>
                                     <div className="btn">
                                         Learn More

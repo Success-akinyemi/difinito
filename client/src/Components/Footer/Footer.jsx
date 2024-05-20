@@ -47,8 +47,6 @@ function Footer() {
                         <Link className={`link`} to='' >Team</Link>
                         <Link className={`link`} to='' >Services</Link>
                         <Link className={`link`} to='' >Projects</Link>
-                        <Link className={`link`} to='' >Pricing</Link>
-                        <Link className={`link`} to='' >News</Link>
                         <Link className={`link`} to='' >Contact Us</Link>
                     </div>
                 </div>

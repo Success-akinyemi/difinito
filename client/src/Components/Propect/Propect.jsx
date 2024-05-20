@@ -41,7 +41,7 @@ function Propect() {
             <div className="body">
                 Reliability: Difinito is the reliable brand you never knew you needed. We are trustworthy and dependable, consistently delivering on our promises and exceeding your expectations. Our fast and efficient service ensures you can always count on us to deliver results. 
                 Integrity: We uphold honesty and transparency in all our business practices. 
-                Innovation: We are dedicated to pushing boundaries and driving forward progress.We are dedicated to continual improvement and pushing the boundaries of what is possible to make a positive impact through our innovative ideas and approaches
+                Innovation: We are dedicated to pushing boundaries and driving forward progress.
             </div>
         </div>
     </div>
