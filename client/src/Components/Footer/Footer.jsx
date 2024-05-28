@@ -42,11 +42,10 @@ function Footer() {
                     <h2>Quick Links</h2>
 
                     <div className="menu">
-                        <Link className={`link`} to='' >Home</Link>
-                        <Link className={`link`} to='' >About</Link>
-                        <Link className={`link`} to='' >Team</Link>
-                        <Link className={`link`} to='' >Services</Link>
-                        <Link className={`link`} to='' >Projects</Link>
+                        <Link className={`link`} to='/' >Home</Link>
+                        <Link className={`link`} to='/about' >About</Link>
+                        <Link className={`link`} to='/gallery' >Gallery</Link>
+                        <Link className={`link`} to='/portfolio' >Portfolio</Link>
                         <Link className={`link`} to='' >Contact Us</Link>
                     </div>
                 </div>
