@@ -4,7 +4,7 @@ import ImgBg from '../../assets/aidi.png'
 import Footer from '../../Components/Footer/Footer'
 import ImgOne from '../../assets/card/two.jpg'
 import ImgTwo from '../../assets/card/three.jpg'
-import { teamMembers } from '../../data/teamMembers'
+import { teamMembersFamily, teamMembersFriends } from '../../data/teamMembers'
 
 
 function About() {
@@ -49,26 +49,53 @@ function About() {
           </div>
         </div>
 
-        <div className="team">
+        <div className="sidePadding team">
           <div className="top">
             Our Team Members
           </div>
 
-          <div className='teamMembers'>
-            {
-              teamMembers.map((item, idx) => (
-                <div key={idx} className="teamCard">
-                  <img src={item?.img} alt={item?.name} />
-                  <div className="info">
-                    <div className="name">{item?.name}</div>
-                    <div className="role">{item?.role}</div>
-                  </div>
-                </div>
-              ))
-            }
-          </div>
-        </div>
+          <div className="teamCard">
+            <div className="infoTeam">
+              <h2>People</h2>
+              <p>The great minds <br /> behind our works</p>
+            </div>
 
+            <div className="content">
+              <h3 className='associates'>Familiy</h3>
+              <div className='teamMembers'>
+                {
+                  teamMembersFamily.map((item, idx) => (
+                    <div key={idx} className="teamCard">
+                      <img src={item?.img} alt={item?.name} />
+                      <div className="info">
+                        <div className="name">{item?.name}</div>
+                        <div className="role">{item?.role}</div>
+                      </div>
+                    </div>
+                  ))
+                }
+              </div>
+
+              <h3 className='associates'>Friends</h3>
+              <div className='teamMembers'>
+                {
+                  teamMembersFriends.map((item, idx) => (
+                    <div key={idx} className="teamCard">
+                      <img src={item?.img} alt={item?.name} />
+                      <div className="info">
+                        <div className="name">{item?.name}</div>
+                        <div className="role">{item?.role}</div>
+                      </div>
+                    </div>
+                  ))
+                }
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+    
         <Footer />
     </div>
   )

@@ -45,7 +45,7 @@ function Gallery() {
             {
               currentPageData.map((item, idx) => (
                 <div key={idx} className="teamCard">
-                    <div className="overlay"></div>
+                    <div className="overlay">{item?.info}</div>
                   <img src={item?.img} alt={item?.name} />
                   <div className="info">
                     <div className="name">{item?.name}</div>

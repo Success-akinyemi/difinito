@@ -46,7 +46,10 @@ function Portfolio() {
             {
               currentPageData.map((item, idx) => (
                 <div key={idx} className="teamCard">
-                    <div className="overlay"></div>
+                    <div className="overlay">
+                      <h3>Project Overview</h3>
+                      <p>{item?.info}</p>
+                    </div>
                   <img src={item?.img} alt={item?.name} />
                   <div className="info">
                     <div className="name">{item?.name}</div>
