@@ -207,6 +207,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .about .team .teamMembers{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     .about .cardInfo{
         flex-direction: column;
     }
@@ -232,9 +236,5 @@
 @media screen and (max-width: 360px) {
     .about .team .teamMembers .teamCard{
         width: 96%;
-    }
-
-    .about .cardInfo .imgCard img{
-        width: 100%;
     }
 }
